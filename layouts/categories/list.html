@@ -4,7 +4,7 @@
         <div uk-grid>
             <div class="uk-width-4-5@s">
                 <div uk-grid>
-                {{ range (where .RegularPages.ByDate "Type" "blog") }}
+                {{ range (where .Pages.ByDate "Type" "blog") }}
                     <div class="uk-width-1-3@m uk-width-1-2@s">
                             {{ partial "templates/blog-grid" . }}
                     </div>
