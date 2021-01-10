@@ -17,3 +17,5 @@ fields:
       maxSize: 64
     label: Favicon
   label: Branding
+pages:
+- data/appearance.yml
