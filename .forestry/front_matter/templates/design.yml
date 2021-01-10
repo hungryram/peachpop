@@ -11,25 +11,16 @@ fields:
     config:
       maxSize: 64
     label: Image
-  - name: subtitle
-    type: text
-    config:
-      required: false
-    label: Subtitle
   - name: heading
     type: text
     config:
       required: false
     label: Heading
-  - name: body
-    type: textarea
-    default: ''
+  - name: subtitle
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Body
+    label: Subtitle
   - name: link
     type: text
     config:
@@ -41,55 +32,6 @@ fields:
       required: false
     label: Link Text
   label: Hero
-- name: introduction
-  type: field_group
-  config: {}
-  fields:
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  - name: heading
-    type: text
-    config:
-      required: false
-    label: Heading
-  - name: main_heading
-    type: text
-    config:
-      required: false
-    label: Main Heading
-  - name: body
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Body
-  - name: link_text
-    type: text
-    config:
-      required: false
-    label: Link Text
-  - name: link
-    type: text
-    config:
-      required: false
-    label: Link
-  label: Introduction
-- name: slogan
-  type: field_group
-  config: {}
-  fields:
-  - name: slogan
-    type: text
-    config:
-      required: false
-    label: Slogan
-  label: Slogan
 - name: featured_blocks
   type: field_group
   config: {}
@@ -155,5 +97,39 @@ fields:
       label: Image
     label: Featured Three
   label: Featured Blocks
+- name: introduction
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  label: Introduction
+- name: video
+  type: field_group
+  config: {}
+  fields:
+  - name: upload_video
+    type: file
+    config:
+      maxSize: 64
+    label: Upload Video
+  - name: video_link
+    type: text
+    config:
+      required: false
+    label: Video Link
+  label: Video
 pages:
 - data/homelayout.yml
