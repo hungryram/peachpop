@@ -2,10 +2,11 @@
   "/shop/calming/": [
     {
       "name": "Ram Sornram Dettmer",
-      "rating": "5",
+      "path": "/shop/calming/",
+      "rating": "",
       "heading": "The BEST EVER",
-      "review": "my review product",
-      "date": "2021-01-10T07:26:58.110Z"
+      "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis at vitae aliquid, molestiae repellendus dignissimos quae voluptate ducimus reiciendis iure similique fugiat minus numquam pariatur autem accusamus magnam eum",
+      "date": "2021-01-10T07:47:49.534Z"
     }
   ]
 }

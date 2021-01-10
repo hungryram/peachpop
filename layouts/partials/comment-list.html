@@ -1,4 +1,4 @@
-{{ $thisPost := .Permalink }}
+{{ $thisPost := .RelPermalink }}
 {{ $comments := .Site.Data.comments }}
 {{ $.Scratch.Set "counter" 0 }}
 {{ range $comments }}
@@ -15,7 +15,40 @@
                                     <h3>{{ .heading }}</h3>
                                     <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ .name }}</a></h4>
                                     <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                        <li><a href="#">on {{ .date | dateFormat "Mon, 02 Jan. 2006, 15:04 MST" }}</a></li>
+                                        <li>
+                                            {{ if eq .rating "5" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "4" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "3" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "2" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "1" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ end }}
+                                        </li>
+                                        <li>on {{ .date | dateFormat "Jan. 02, 2006" }}</li>
                                     </ul>
                                 </div>
                             </div>
