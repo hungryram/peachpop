@@ -130,6 +130,11 @@ fields:
     config:
       required: false
     label: Video Link
+  - name: background_image
+    type: file
+    config:
+      maxSize: 64
+    label: Background Image
   label: Video
 pages:
 - data/homelayout.yml
