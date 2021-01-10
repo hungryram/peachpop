@@ -1,11 +1,10 @@
 {{ define "main" }}
 {{ $company := .Site.Data.profile.company_name }}
-<div class="section">
-    <div class="container">
+<div class="uk-section">
+    <div class="uk-container">
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
                 <div class="content">
-                    <h1 class="title is-4 has-text-centered">{{ $company }} {{ .Title }}</h1>
                     <p><strong>Last Updated: </strong>{{ .Params.last_update }}</p>
                     <p><strong>Our Website:</strong> {{ .Site.BaseURL }}</p>
                     {{ if in .Permalink "privacy" }}

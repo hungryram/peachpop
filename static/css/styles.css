@@ -122,10 +122,10 @@ label[for]:hover {
 
 /* SNIPCART */
 
-.snipcart-modal__container,
+div.snipcart-modal__container,
 .snipcart-modal__container.snipcart-cart-summary--edit.snipcart-cart-summary-side,
 .snipcart-modal__container.snipcart-layout--large {
-  z-index: 100;
+  z-index: 1000;
 }
 
 .snipcart__box--badge-highlight,
