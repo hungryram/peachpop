@@ -6,10 +6,12 @@
       <div class="uk-width-1-3@s">
           <div>
             <h4 class="uk-text-left uk-text-bold">About</h4>
-            <p>Your nature-inspired supplier of all-organic and fresh produce for all your daily needs. We offer skin treatments, nutrition advisory and more.</p>
+            <p>{{ .Site.Data.appearance.footer.footer_bio }}</p>
             <h6 class="uk-text-small">Follow Us</h6>
-            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+            {{ if .Site.Data.profile.social_media.instagram }}<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>{{ end }}
+            {{ if .Site.Data.profile.social_media.facebook }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>{{ end }}
+            {{ if .Site.Data.profile.social_media.pinterest }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="pinterest"></a>{{ end }}
+            {{ if .Site.Data.profile.social_media.twitter }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>{{ end }}
           </div>
       </div>
       <div class="uk-width-1-3@s">
@@ -26,7 +28,7 @@
         <div>
           <h4 class="uk-text-left uk-text-bold">Contact</h4>
           <ul class="uk-list">
-            <li><a href=""><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">info@peachpop.com</span></a></li>
+            <li><a href="mailto:{{ .Site.Data.profile.contact_information.email }}"><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">{{ .Site.Data.profile.contact_information.email }}</span></a></li>
             <li><a href="/legal"><span href="#" uk-icon="icon: file-text" class="uk-margin-small-right"></span><span class="uk-text-middle">Legal Policies</span></a></li>
           </ul>
         </div>    
