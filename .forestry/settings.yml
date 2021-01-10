@@ -20,6 +20,14 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: document
+  path: content/contact/_index.md
+  label: Contact
+  match: "**/*"
+- type: document
+  path: content/faq/_index.md
+  label: FAQ
+  match: "**/*"
 - type: directory
   path: content/shop
   label: Products
@@ -28,6 +36,8 @@ sections:
   templates:
   - title-and-body
   - products
+- type: heading
+  label: Blog
 - type: directory
   path: content/blog
   label: Posts
