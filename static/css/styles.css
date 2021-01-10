@@ -7,6 +7,10 @@
   font-family: moon;
 }
 
+body {
+  overflow: hidden;
+}
+
 body h1,
 body h2,
 body h3,
