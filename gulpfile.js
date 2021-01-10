@@ -30,7 +30,7 @@ gulp.task("get-comments", function (done) {
 
         var comment = {
           name: data.Name,
-          path: data.Path,
+          path: data.path,
           rating: data.Rating,
           heading: data.Heading,
           review: data.Review,

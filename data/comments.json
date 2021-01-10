@@ -1,12 +1,11 @@
 {
   "/shop/calming/": [
     {
-      "date": "2021-01-10T07:17:00.037Z"
-    }
-  ],
-  "undefined": [
-    {
-      "date": "2021-01-10T06:40:38.259Z"
+      "name": "Ram Sornram Dettmer",
+      "rating": "5",
+      "heading": "The BEST EVER",
+      "review": "my review product",
+      "date": "2021-01-10T07:26:58.110Z"
     }
   ]
 }
