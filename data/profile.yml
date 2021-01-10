@@ -1,0 +1,26 @@
+---
+company_name: ''
+social_media:
+  instagram: ''
+  twitter: ''
+  facebook: ''
+  pinterest: ''
+  yelp: ''
+  youtube: ''
+  tiktok: ''
+contact_information:
+  name: ''
+  phone: ''
+  email: ''
+search_engine_optimization:
+  title_tag: ''
+  meta_description: ''
+  twitter_card:
+    twitter_username: ''
+  facebook:
+    app_id: ''
+welcome:
+  profile_photo: ''
+  heading: ''
+  body: ''
+  links: []

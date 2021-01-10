@@ -144,3 +144,5 @@ fields:
       labelField: 
     label: Links
   label: Welcome
+pages:
+- data/profile.yml
