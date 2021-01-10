@@ -1,30 +1,34 @@
 ---
 hero:
-  image: ''
-  subtitle: ''
-  heading: ''
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1610318159/pricilla-dettmer/peach-pop/photo-1468112014733-deb9e1f8ddd2_j9c17p.jpg
+  subtitle: Our new organic tea blend
+  heading: Natural Skin
   body: ''
-  link: ''
-  link_text: ''
+  link: Shop Collections
+  link_text: "/shop"
 introduction:
   image: ''
-  heading: ''
+  heading: Premium skincare
   main_heading: ''
-  body: ''
+  body: Alienum phaedrum torquatos nec eu, detr periculis ex, nihil expetendis in
+    mei. Mei an pericula.
   link_text: ''
   link: ''
 slogan:
   slogan: ''
 featured_blocks:
   featured_one:
-    heading: ''
-    link: ''
-    image: ''
+    heading: Organic
+    link: "/organic"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1610318199/pricilla-dettmer/peach-pop/h1-banner-img-1-600x600_v1qty2.jpg
   featured_two:
-    heading: ''
-    link: ''
-    image: ''
+    heading: Scrubs
+    link: "/scrubs"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1610237676/pricilla-dettmer/peach-pop/h1-banner-img-2-600x600_fch3im.jpg
   featured_three:
-    heading: ''
-    link: ''
-    image: ''
+    heading: Lotion
+    link: "/lotion"
+    image: https://res.cloudinary.com/hungryram19/image/upload/v1610318227/pricilla-dettmer/peach-pop/h1-banner-img-3-600x600_zclglm.jpg
+video:
+  upload_video: ''
+  video_link: https://yootheme.com/site/images/media/yootheme-pro.mp4
