@@ -119,3 +119,27 @@ label[for]:hover {
 .rating [type="radio"]:nth-of-type(5):focus ~ .stars label:nth-of-type(5) {
   color: #ff8c00;
 }
+
+/* SNIPCART */
+
+.snipcart-modal__container,
+.snipcart-modal__container.snipcart-cart-summary--edit.snipcart-cart-summary-side,
+.snipcart-modal__container.snipcart-layout--large {
+  z-index: 100;
+}
+
+.snipcart__box--badge-highlight,
+button.snipcart-cart-button--highlight {
+  background: #cecece;
+}
+
+.snipcart__icon--blue-dark path,
+.snipcart__icon--blue-light path {
+  fill: #000000;
+}
+
+.snipcart-signin__forgot-password,
+.snipcart-signin__register-link,
+.snipcart__actions--link {
+  color: #000000;
+}

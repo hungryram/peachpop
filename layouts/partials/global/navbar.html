@@ -9,20 +9,29 @@
             </ul>
         </div></div>
         <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="100"></a>
-        <div class="uk-navbar-center-right"><div>
+        <div class="uk-navbar-center-right">
+        <div>
             <ul class="uk-navbar-nav">
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/faq">FAQ</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <li><a href="#" class="snipcart-customer-signin"><span uk-icon="user"></span></a></li>
+                <li><a href="#" class="snipcart-checkout"><span uk-icon="cart"></span></a></li>
             </ul>
-        </div></div>
-
+        </div>
+        </div>
     </div>
 </nav>
 
 <div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; top: 400">
 <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-padding-small uk-box-shadow-small">
-    <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="70"></a>
+    <div class="uk-navbar-left">
+        <a href="#" class="snipcart-customer-signin uk-margin-small-right"><span uk-icon="user"></span></a>
+        <a href="#" class="snipcart-checkout"><span uk-icon="cart"></span></a>
+    </div>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="70"></a>
+    </div>
     <div class="uk-navbar-right">
         <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle></a>
     </div>
