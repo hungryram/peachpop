@@ -1,0 +1,13 @@
+<div>
+    <div class="uk-card uk-card-default uk-card-small">
+        <div class="uk-card-media-top uk-cover-container">
+            <img data-src="{{ .Params.featured_image }}" alt="{{ .Params.image_alt_tag }}" uk-cover uk-img>
+            <canvas width="" height="300"></canvas>
+        </div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-bold">{{.Title }}</h3>
+            <p class="uk-text-small">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="uk-button uk-button-text">Read more</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+---
+label: Blog
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: featured_image
+  type: file
+  config:
+    maxSize: 64
+  label: Featured Image
+- name: image_alt_tag
+  type: text
+  config:
+    required: false
+  label: Image Alt Tag
+- name: date_published
+  type: datetime
+  label: Date Published
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+pages:
+- content/blog/best-products.md
+- content/blog/cleansing-scrub.md
+- content/blog/rough-scrub.md

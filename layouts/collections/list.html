@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <div uk-grid>
+            <div class="uk-width-1-5">
+                {{ partial "templates/sidebar" . }}
+            </div>
+            <div class="uk-width-4-5" uk-grid>
+                {{ range (where .Pages.ByWeight "Type" "shop") }}
+                    <div>
+                        <a href="{{ .Permalink }}">
+                            {{ partial "templates/product-grid" . }}
+                        </a>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{  end }}

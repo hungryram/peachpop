@@ -1,0 +1,22 @@
+<div class="uk-text-center">
+    <img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="200" height="200" alt="Border circle">
+    <div class="uk-margin-medium-top">
+        <h3>Pricilla Dettmer</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione officia numquam officiis atque, sit accusantium veniam sunt minima amet aperiam pariatur laboriosam in odio sapiente voluptate nesciunt porro fuga consequatur.</p>
+    </div>
+    <div class="uk-margin-medium-top uk-text-left">
+        <h4>Categories</h4>
+        <ul class="uk-nav">
+            {{ range $col, $taxonomy := .Site.Taxonomies.collections }}
+            <li>
+              <a href="/collections{{ $col | urlize | relURL }}">{{ $col | humanize }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="uk-margin-medium-top uk-text-left">
+        <h4>Follow Us</h4>
+        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+        <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+    </div>
+</div>

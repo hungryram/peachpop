@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <div uk-grid>
+            <div class="uk-width-1-2">
+                <h2>Get in touch</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cupiditate maiores voluptate explicabo magni! Ad, deleniti sunt dolor rerum minus laborum saepe amet aliquam nisi eaque voluptatibus, tenetur voluptatum architecto.</p>
+                <ul class="uk-list">
+                    <li><a href=""><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">info@peachpop.com</span></a></li>
+                  </ul>
+                <h6 class="uk-text-small">Follow Us</h6>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+            </div>
+            <div class="uk-width-1-2">
+                <div>
+                    <form action="/thank-you" class="uk-grid-small" uk-grid data-netlify="true" name="Contact Form" method="POST" data-netlify-recaptcha="true">
+                        <div class="uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Name">
+                        </div>
+                        <div class="uk-width-1-2@s">
+                            <input class="uk-input" type="text" placeholder="Email">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <input class="uk-input" type="text" placeholder="Subject">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <textarea name="" id="" cols="30" rows="8" class="uk-textarea" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="uk-button uk-button-default">Submit</button>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

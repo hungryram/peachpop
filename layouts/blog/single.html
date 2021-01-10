@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <div uk-grid>
+            <div class="uk-width-4-5@m">
+                <div class="uk-padding-small">
+                    <div class="content">
+                        {{ if .Params.featured_image }}
+                        <div class="uk-text-center">
+                            <img data-src="{{ .Params.featured_image }}" alt="{{ .Params.image_alt_tag }}" uk-img>
+                        </div>
+                        {{ end }}
+                        <h1>{{ .Title }}</h1>
+                        {{ .Content }}
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-5@m">
+                    <div>
+                        {{ partial "templates/blog-sidebar" . }}
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{  end }}

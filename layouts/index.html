@@ -1,8 +1,10 @@
-{{ define "main" }}
-    {{ $home := .Site.GetPage "/home" }}
-    <div class="self-center my-12">
-        {{ $home.Content }}
-    </div>
-    {{ partial "comment-form.html" . }}
-    {{ partial "comment-list.html" . }}
-{{ end }}
+{{ partial "global/head" . }}
+{{ partial "home/hero" . }}
+{{ partial "home/product" . }}
+{{ partial "home/featured" . }}
+{{ partial "home/banner" . }}
+{{ partial "home/intro" . }}
+{{ partial "home/blog" . }}
+{{ partial "home/subscription" . }}
+
+{{ partial "global/footer" . }}

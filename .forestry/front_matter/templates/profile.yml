@@ -1,0 +1,146 @@
+---
+label: Profile
+hide_body: false
+fields:
+- name: company_name
+  type: text
+  config:
+    required: false
+  label: Company Name
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: instagram
+    type: text
+    config:
+      required: false
+    label: Instagram
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: pinterest
+    type: text
+    config:
+      required: false
+    label: Pinterest
+  - name: yelp
+    type: text
+    config:
+      required: false
+    label: Yelp
+  - name: youtube
+    type: text
+    config:
+      required: false
+    label: Youtube
+  - name: tiktok
+    type: text
+    config:
+      required: false
+    label: Tiktok
+  label: Social Media
+- name: contact_information
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  label: Contact Information
+- name: search_engine_optimization
+  type: field_group
+  config: {}
+  fields:
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
+  - name: twitter_card
+    type: field_group
+    config: {}
+    fields:
+    - name: twitter_username
+      type: text
+      config:
+        required: false
+      label: Twitter Username
+    label: Twitter Card
+  - name: facebook
+    type: field_group
+    config: {}
+    fields:
+    - name: app_id
+      type: text
+      config:
+        required: false
+      label: App ID
+    label: Facebook
+  label: Search Engine Optimization
+- name: welcome
+  type: field_group
+  config: {}
+  fields:
+  - name: profile_photo
+    type: file
+    config:
+      maxSize: 64
+    label: Profile Photo
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: body
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Body
+  - name: links
+    type: field_group_list
+    fields:
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    - name: image
+      type: file
+      config:
+        maxSize: 64
+      label: Image
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  label: Welcome

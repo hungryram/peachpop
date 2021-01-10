@@ -1,0 +1,53 @@
+<nav class="uk-box-shadow-small uk-navbar-container uk-padding-small{{ if $.IsHome }} uk-position-top{{ end }} uk-visible@s" uk-navbar>
+    <div class="uk-navbar-center">
+
+        <div class="uk-navbar-center-left"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+            </ul>
+        </div></div>
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="100"></a>
+        <div class="uk-navbar-center-right"><div>
+            <ul class="uk-navbar-nav">
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div></div>
+
+    </div>
+</nav>
+
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; top: 400">
+<nav class="uk-navbar uk-navbar-container uk-hidden@s uk-padding-small uk-box-shadow-small">
+    <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="70"></a>
+    <div class="uk-navbar-right">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle></a>
+    </div>
+</nav>
+</div>
+<div id="mobile-menu-slide" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default uk-nav-center">
+            <img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-white.png" alt="" width="70">
+            <li class="uk-nav-header">Browse The Site</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="uk-nav-divider"></li>
+            <li class="uk-nav-header">Shop Collections</li>
+            {{ range $col, $taxonomy := .Site.Taxonomies.collections }}
+            <li>
+              <a href="/collections{{ $col | urlize | relURL }}">{{ $col | humanize }}</a>
+            </li>
+            {{ end }}
+            <li class="uk-nav-divider"></li>
+            <li class="uk-nav-header">Policies</li>
+            {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

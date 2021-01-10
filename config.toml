@@ -1,12 +1,10 @@
 # SETUP
-baseurl = "https://hugo-comments.netlify.com/"
-publishdir = "public"
 DefaultContentLanguage = "en"
+baseurl = "https://peachpop.netlify.app/"
+publishdir = "public"
 #canonifyUrls = "true"
-googleAnalytics = ""
-disableKinds = ["RSS","taxonomy","taxonomyTerm","sitemap"] #remove this when blog goes live
-summaryLength = 40
-
-[params]
-    year = "2019"
-    author = "ttntm"
+summaryLength = 15
+[taxonomies]
+category = "categories"
+collection = "collections"
+tag = "tags"

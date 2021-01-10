@@ -1,0 +1,25 @@
+<div class="uk-card uk-card-small uk-card-default">
+    <div class="uk-card-media-top uk-cover-container">
+        <img data-src="{{ index .Params.photos 0 }}" alt="{{ .Title }}" uk-cover onmouseover="this.src='{{ index .Params.photos 1 }}'" onmouseout="this.src='{{ index .Params.photos 0 }}'" uk-img>
+        <canvas width="" height="400"></canvas>
+    </div>
+    <div class="uk-card-body">
+        <div uk-grid>
+            <div class="uk-width-1-2">
+                <div class="product-grid-name">
+                    <span class="uk-text-bold">{{ .Title }}</span>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="product-grid-price uk-text-right">
+                    {{ if .Params.sale_price }}
+                    <span class="strike uk-margin-small-right">${{ lang.NumFmt 2 .Params.price }}</span>
+                    <span class="uk-text-bold">${{ lang.NumFmt 2 .Params.sale_price }}</span>
+                    {{ else }}
+                    <span class="uk-text-bold">${{ lang.NumFmt 2 .Params.price }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
