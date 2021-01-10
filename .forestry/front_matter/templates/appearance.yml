@@ -17,5 +17,19 @@ fields:
       maxSize: 64
     label: Favicon
   label: Branding
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer_bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Bio
+  label: Footer
 pages:
 - data/appearance.yml
