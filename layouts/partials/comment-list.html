@@ -8,12 +8,10 @@
     {{ range $comments }}
         {{ range . }}
             {{ if eq .path $thisPost }}
-                    <article class="uk-comment">
+                    <article class="uk-comment uk-comment-primary uk-margin-small-top">
                         <header class="uk-comment-header">
                             <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                 <div class="uk-width-expand">
-                                    <h3>{{ .heading }}</h3>
-                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{ .name }}</a></h4>
                                     <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
                                         <li>
                                             {{ if eq .rating "5" }}
@@ -48,8 +46,11 @@
                                             <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
                                             {{ end }}
                                         </li>
-                                        <li>on {{ .date | dateFormat "Jan. 02, 2006" }}</li>
+                                        <li>
+                                            <h4 class="uk-margin-remove uk-text-capitalize">{{ .heading }}</h4>
+                                        </li>
                                     </ul>
+                                    <h6 class="uk-margin-remove">By {{ .name }} <small>on {{ .date | dateFormat "Jan. 02, 2006" }}</small></h6>
                                 </div>
                             </div>
                         </header>
