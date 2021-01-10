@@ -1,0 +1,30 @@
+---
+hero:
+  image: ''
+  subtitle: ''
+  heading: ''
+  body: ''
+  link: ''
+  link_text: ''
+introduction:
+  image: ''
+  heading: ''
+  main_heading: ''
+  body: ''
+  link_text: ''
+  link: ''
+slogan:
+  slogan: ''
+featured_blocks:
+  featured_one:
+    heading: ''
+    link: ''
+    image: ''
+  featured_two:
+    heading: ''
+    link: ''
+    image: ''
+  featured_three:
+    heading: ''
+    link: ''
+    image: ''
