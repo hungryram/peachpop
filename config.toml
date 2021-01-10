@@ -1,6 +1,6 @@
 # SETUP
 DefaultContentLanguage = "en"
-baseurl = "https://peachpop.netlify.app/"
+baseurl = "https://peachepop.netlify.app/"
 publishdir = "public"
 #canonifyUrls = "true"
 summaryLength = 15
