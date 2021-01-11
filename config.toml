@@ -1,6 +1,6 @@
 # SETUP
 DefaultContentLanguage = "en"
-baseurl = "https://peachepop.netlify.app/"
+baseurl = "http://www.peachepop.com/"
 publishdir = "public"
 #canonifyUrls = "true"
 summaryLength = 15
