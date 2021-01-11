@@ -12,6 +12,10 @@ fields:
   config:
     required: false
   label: SKU
+- name: out_of_stock
+  type: boolean
+  label: Out of Stock
+  description: Enable this to prevent adding product to cart
 - name: price
   type: number
   label: Price
@@ -38,12 +42,6 @@ fields:
   type: image_gallery
   config: {}
   label: Photos
-- name: show_size_chart
-  type: boolean
-  label: Show Size Chart
-- name: marker
-  type: boolean
-  label: Mark as New
 - name: customOptions
   type: blocks
   template_types:
