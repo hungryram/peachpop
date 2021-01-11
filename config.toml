@@ -1,6 +1,6 @@
 # SETUP
 DefaultContentLanguage = "en"
-baseurl = "http://www.peachepop.com/"
+baseurl = "https://www.peachepop.com/"
 publishdir = "public"
 #canonifyUrls = "true"
 summaryLength = 15
