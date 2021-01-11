@@ -1,5 +1,8 @@
 <div class="uk-card uk-card-small uk-card-default">
     <div class="uk-card-media-top uk-cover-container">
+        {{- if .Params.sale_price }}
+        <span class="uk-badge">On Sale</span>
+        {{- end }}
         <img data-src="{{ index .Params.photos 0 }}" alt="{{ .Title }}" uk-cover onmouseover="this.src='{{ index .Params.photos 1 }}'" onmouseout="this.src='{{ index .Params.photos 0 }}'" uk-img>
         <canvas width="" height="400"></canvas>
     </div>

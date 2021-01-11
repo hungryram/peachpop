@@ -37,6 +37,9 @@
                         {{ .Content }}
                     </div>
                     <div>
+                        {{ if .Params.out_of_stock }}
+                        <button class="uk-button uk-button-default" disabled>Out of Stock</button>
+                        {{ else }}
                         <button class="uk-button snipcart-add-item"
                             data-item-id="{{ .Params.sku }}"
                             data-item-price="{{ if $salePrice }}{{ $salePrice }}{{ else }}{{ $listPrice }}{{ end }}"
@@ -51,6 +54,7 @@
                             {{ end }}>
                         Add to bag
                         </button>
+                        {{ end }}
                     </div>
                 </div>
             </div>

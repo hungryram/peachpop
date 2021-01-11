@@ -143,3 +143,14 @@ button.snipcart-cart-button--highlight {
 .snipcart__actions--link {
   color: #000000;
 }
+
+/* PRODUCT */
+
+span.uk-badge {
+  position: absolute;
+  z-index: 20;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0;
+  color: #000;
+}
