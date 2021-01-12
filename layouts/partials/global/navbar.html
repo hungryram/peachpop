@@ -8,7 +8,7 @@
                 <li><a href="/about">About</a></li>
             </ul>
         </div></div>
-        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="100"></a>
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Data.appearance.branding.logo }}" alt="Peache Pop" width="100"></a>
         <div class="uk-navbar-center-right">
         <div>
             <ul class="uk-navbar-nav">
@@ -30,7 +30,7 @@
         <a href="#" class="snipcart-checkout"><span uk-icon="cart"></span></a>
     </div>
     <div class="uk-navbar-center">
-        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-big.png" alt="" width="70"></a>
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Data.appearance.branding.logo }}" alt="" width="70"></a>
     </div>
     <div class="uk-navbar-right">
         <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle></a>
@@ -40,7 +40,7 @@
 <div id="mobile-menu-slide" uk-offcanvas>
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-default uk-nav-center">
-            <img src="https://sante.qodeinteractive.com/wp-content/uploads/2020/09/logo-white.png" alt="" width="70">
+            <img src="{{ .Site.Data.appearance.branding.logo }}" alt="Peache Pop" width="70">
             <li class="uk-nav-header">Browse The Site</li>
             <li><a href="/">Home</a></li>
             <li><a href="/shop">Shop</a></li>
