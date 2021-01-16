@@ -3,8 +3,8 @@ body = "Can't find an answer that's not there? Contact us and we'll answer your 
 heading = "View our most asked questions"
 title = "FAQ"
 [[faq]]
-answer = "**Will (you the customer) have to pay International taxes and duties?**\n\nYour order may be subject to import duties and taxes, which are levied once a shipment reaches to your final destination. Please contact your customs office for specific details.\n\nPeaché Pop cannot control and is not responsible for any duties or taxes applied to your package. **You will be responsible for paying additional charges for customs clearance. Please note: due to COVID-19 there might be a delay in your international order.** "
-question = "International orders"
+answer = "\n**Will (you the customer) have to pay International taxes and duties?**\n\nYour order may be subject to import duties and taxes. Please contact your customs office for specific details. \n\n**Peaché Pop cannot control and is not responsible for any duties or taxes applied to your package.** **You will be responsible for paying additional charges for customs clearance. Please note: due to COVID-19 there might be a delay in your international order.** \n\n  \n**International Shipping information:** \n\nFirst Class Mail: Varies per Country’s customs and please expect some delays due to Covid-19.  \nPriority Mail: 6-10 Business Days.  \nOvernight: 1-2 Business Days."
+question = "International orders information"
 [[faq]]
 answer = "We follow strict CDC and OSHA guidelines. Please refer to www.cdc.gov for more information.\n\nAll orders are packaged where there is only limited staff (1) to minimize any contaminations or exposure. All staff wears gloves and masks, and all packages and items are sanitized with our Certified Anti-germ 99.9% UV light. "
 question = "COVID-19"
