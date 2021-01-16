@@ -3,6 +3,9 @@ body = "Can't find an answer that's not there? Contact us and we'll answer your 
 heading = "View our most asked questions"
 title = "FAQ"
 [[faq]]
+answer = "We follow strict CDC and OSHA guidelines. Please refer to www.cdc.gov for more information.\n\nAll orders are packaged where there is only limited staff (1) to minimize any contaminations or exposure. All staff wears gloves and masks, and all packages and items are sanitized with our Certified Anti-germ 99.9% UV light. "
+question = "COVID-19"
+[[faq]]
 answer = "We work closely with our manuOur lip products are made in Florida, USA. \n\nThe faux mink eyelashes are handmade and come directly from our vendor in Los Angeles. "
 question = ""
 [[faq]]
@@ -23,8 +26,5 @@ question = "How long is shipping"
 [[faq]]
 answer = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 question = "Shipping from?"
-[[faq]]
-answer = "Lorem ipsum **dolor** sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do **_eiusmod_** tempor incididunt ut labore et dolore magna aliqua."
-question = "When did you start?"
 
 +++
