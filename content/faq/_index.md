@@ -3,6 +3,9 @@ body = "Can't find an answer that's not there? Contact us and we'll answer your 
 heading = "View our most asked questions"
 title = "FAQ"
 [[faq]]
+answer = "**Yes! We are 100% cruelty-free.** While we offer select mink eyelashes for those that love mink, no animal were harmed during this process. Most of our lashes are **faux mink made and they are cruelty-free as well.** \n\nOur lip products are **gluten-free, paraben-free, and of course 100% cruelty-free.**"
+question = "Is Peaché Pop cruelty-free?"
+[[faq]]
 answer = "We are located in California, USA."
 question = "Where are you shipping from?"
 [[faq]]
