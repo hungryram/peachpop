@@ -3,6 +3,9 @@ body = "Can't find an answer that's not there? Contact us and we'll answer your 
 heading = "View our most asked questions"
 title = "FAQ"
 [[faq]]
+answer = "We are located in California, USA."
+question = "Where are you shipping from?"
+[[faq]]
 answer = "We are a small business that offers affordable and quality products from eyelashes, lipsticks, and accessories. We are hoping to continue growing to further expand on our product list."
 question = "What is Peaché Pop?"
 [[faq]]
