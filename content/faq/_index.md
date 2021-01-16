@@ -12,7 +12,7 @@ question = "When will my order ship?"
 answer = "We are a small business that offers affordable and quality products from eyelashes, lipsticks, and accessories. We are hoping to continue growing to further expand on our product list."
 question = "What is Peaché Pop?"
 [[faq]]
-answer = "**Yes! We are 100% cruelty-free.** While we offer select mink eyelashes for those that love mink, no animal were harmed during this process. Most of our lashes are **faux mink made and they are cruelty-free as well.**\n\nOur lip products are **gluten-free, paraben-free, and of course 100% cruelty-free. Made in USA.**"
+answer = "**Yes! We are 100% cruelty-free.** While we offer select mink eyelashes for those that love mink, no animal were harmed during this process. Most of our lashes are **faux mink and mink eyelashes are handmade and they are cruelty-free as well.**\n\nOur lip products are **gluten-free, paraben-free, and of course 100% cruelty-free. Made in USA.**"
 question = "Is Peaché Pop cruelty-free?"
 [[faq]]
 answer = "We are located in California, USA."
